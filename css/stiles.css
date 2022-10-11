@@ -1000,15 +1000,16 @@ footer{
 
 .subscription{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 93px;
+   
+}
+.footer-label{
+    margin: 0;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    margin-bottom: 20px;
 }
-
 .subscry{
     width: 358px;
     height: 50px;
@@ -1017,7 +1018,7 @@ footer{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
-    margin-top: 20px;
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -1071,7 +1072,8 @@ footer{
 
 .footer-sub{
     display: flex;
-    align-items: flex-end
+    flex-direction: column;
+    margin-left: 93px;
 }
 /* portfolio */
 
