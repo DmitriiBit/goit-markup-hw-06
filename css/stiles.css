@@ -368,33 +368,45 @@ ul{
   }
 
   .form-fild{
-    position: relative;
-    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
-   
-  }
-
-
-  .form-label{
-    position: absolute;
-    top: 50%;
-    left: 40px;
-    margin: 0;
-    padding: 0;
-    transform: translateY(-50%)
-  }
-
- 
-  .form-fild input {
+    position: relative;
    
     
+   
+   
+  }
+
+
+  /* .form-label{
+    position: absolute;
+    top: -18px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  } */
+
+
+label{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+  
+ 
+  .form-fild input {
     margin: 0;
     padding: 16px 20px;
-    padding-left: 50px;
-    border: 1px solid var(--accent-color);
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    height: 40px;
   }
   
   .form-fild input:focus{
@@ -403,18 +415,21 @@ ul{
    
   }
   
-  
-  
-  
-  
     
-    textarea{
+  textarea{
+       
         resize: none;
+        margin: 0;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
         padding: 12px 16px;
         height: 120px;
-        margin: 0;
     }
   
+    textarea:hover{
+        border: 1px solid var(--active-link-color);
+    }
+
     .button-send{
       font-family: 'Roboto';
       font-style: normal;
@@ -437,6 +452,7 @@ ul{
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: row;
       margin-bottom: 30px;
       font-family: 'Roboto';
       font-style: normal;
@@ -465,7 +481,8 @@ ul{
     display: inline-block;
     top: 50%;
     left: 14px;
-    transform: translateY(-50%);
+    transform: translate (-50%);
+    
     
     
    }
@@ -488,6 +505,8 @@ ul{
 }
 
 .close-modal{
+    display: flex;
+    
     position: absolute;
    
     right: -6px;
@@ -498,8 +517,8 @@ ul{
     fill: var(--accent-color);
     
     background-color: var(--primary-bg-color);
-    background-position: center;
-    border: none;
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -510,11 +529,11 @@ ul{
 
 
 
-.form-fild:focus-within > .form-label, .form-input:not(:placeholder-shown) + .form-label
+/* .form-fild:focus-within > .form-label, .form-input:not(:placeholder-shown) + .form-label
  {
   transform: translate(-40px, -42px);
  
- }
+ } */
 /* class="benefits" */
 
 .benefits-m{
