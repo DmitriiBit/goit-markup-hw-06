@@ -371,8 +371,8 @@ ul{
     display: flex;
     flex-direction: column;
     position: relative;
-   margin-bottom: 10px;
-   
+    margin-bottom: 10px;
+ 
   }
 
 
@@ -500,10 +500,15 @@ label{
     background-origin: border-box;
    } 
    .checkbox{
+    position: absolute;
     margin-right: 7px;
     width: 16px;
     height: 15px;
-    appearance: none;
+    /* appearance: none; */
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
    }
   
    .icon{
