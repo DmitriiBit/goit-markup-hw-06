@@ -364,7 +364,7 @@ ul{
     letter-spacing: 0.03em;
     color: var(--accent-color);
 
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 
   .form-fild{
@@ -372,7 +372,7 @@ ul{
     flex-direction: column;
     position: relative;
     margin-bottom: 10px;
- 
+   
   }
 
 
@@ -398,7 +398,13 @@ label{
     flex-direction: column;
     
 }
-  
+  .label_text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  }
  
   .form-input {
     margin: 0;
@@ -524,7 +530,7 @@ label{
     width: 18px;
     height: 18px;
     top: 50%;
-    transform: translateY(20%);
+    
     transition-duration: 250ms;
     transition-timing-function: var(--time-transition-duration);
 }
@@ -1111,7 +1117,7 @@ footer{
 .footer-sub{
     display: flex;
     flex-direction: column;
-    margin-left: 93px;
+    margin-left: auto ;
 }
 /* portfolio */
 
